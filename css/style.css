@@ -17,6 +17,8 @@ body {
     padding: 0 1rem;
 }
 
+
+/* HEADER */
 header,
 .hero-section,
 .courses-section,
@@ -63,6 +65,7 @@ header nav a:nth-child(2n-1) {
     text-transform: uppercase;
 }
 
+/* MAIN */
 .hero-section {
     padding-right: 0;
     padding-bottom: 16rem;
@@ -115,6 +118,70 @@ h2 {
     top: -0.75rem;
     height: 36px;
     width: 40px;
+}
+
+/* CARDS SECTION */
+.courses-section {
+    padding-bottom: 8rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.25rem;
+    margin-top: -8rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
+}
+
+.card:nth-child(2n) {       
+    /* Aplica para todo child card par "child(2n)"*/
+    align-self: end;
+    background-color: var(--color-secondary);
+}
+
+.card strong {
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.card a {
+    display: block;
+    margin: 3rem 0 0 auto;
+    width: fit-content;
+}
+
+/* FOOTER */
+footer {
+    border-bottom: 0;
+    padding: 1rem 1.25rem 4rem;
+}
+
+footer nav a {
+    display: block;
+    padding-left: 0;
+}
+
+.newslatter-form label {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.newslatter-form input {
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+    font-size: 1.5rem;
+    padding: .5rem;
+    width: 100%;
 }
 
 /* classes predefinidas de margens */
